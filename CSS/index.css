@@ -1,0 +1,106 @@
+*{
+    background-color: rgb(255, 255, 255);
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;  
+     font-family:Arial, Helvetica, sans-serif;
+     scroll-behavior: smooth;
+     
+}
+     
+.navigation-header {
+   background-color: rgb(255, 255, 255); 
+   min-width: 1200px;
+   height: 25px;
+   margin: 10px;
+   padding: 0 15px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+nav{
+    width: 100%;
+    height: 25px;
+    background-color: rgb(255, 255, 255);
+    min-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container > a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 25px;
+    
+}
+.navigation-items{
+    display: flex;
+    gap: 100px;
+    
+}
+.navigation-items > a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    transition: .4s ease-in-out;
+
+}
+
+.navigation-items > a:hover{
+    color: rgb(255, 1, 1);
+}
+
+
+.hamburger {
+    display: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+  }
+  @media screen and (max-width:768px) {
+    .hamburger {
+      display: flex;
+      cursor: pointer;
+    }
+    .hamburger #closeHam {
+      display: none;
+    }
+    .navigation-items {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      top: 58px;
+      background-color: rgb(73, 51, 153);
+      width: 100%;
+      height: calc(100vh - 58px);
+      padding-top: 60px;
+      gap: 10vh;
+    }
+  }
+
+
+
+.slider{
+    margin: 15px 20px 10px 10px;
+    width: 100%;
+    background-color: black;
+    height: 89vh;
+}
+.facility{
+    margin: -9px 20px 10px 10px;
+    width: 100%;
+    background-color: blueviolet;
+    height: 70vh;
+}
+
+.management{
+    margin: -9px 20px 10px 10px;
+    width: 100%;
+    background-color: rgb(139, 130, 148);
+    height: 70vh;
+}
